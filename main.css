@@ -1,0 +1,225 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body
+{
+    min-height: 100vh;
+    background: #091921;
+}
+.day
+{
+    position: absolute;
+    left: 124px;
+    top: -46px;
+    color: aquamarine;
+    font-size: 20px;
+}
+.clock
+{
+    position: relative;
+    margin: 40px auto;
+    width:350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://user-images.githubusercontent.com/42720361/80282419-a293a400-8711-11ea-81c7-1c44e2980db2.png);
+    background-size: cover;
+    border: 16px solid #919210;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+}
+.clock:before
+{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+.clock .hour,
+.clock .min,
+.clock .sec
+{
+    position: absolute;
+}
+.clock .hour, .hr
+{
+ width: 160px;
+ height: 160px;
+}
+.clock .min, .mn
+{
+ width: 190px;
+ height: 190px;
+}
+.clock .sec, .sc
+{
+ width: 230px;
+ height: 230px;
+}
+.hr, .mn, .sc
+{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    position: absolute;
+    border-radius: 50%;
+}
+.hr:before
+{
+  content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.mn:before
+{
+  content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sc:before
+{
+  content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ff105e;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+#timer-hour, #timer-minute, #timer-second
+{
+    text-align: center;
+    padding: 18px;
+    margin: 0 10px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    color: #919210;
+    font-size: 20px;
+    background-color: wheat;
+    border: 0;
+    outline: none;
+}
+.area
+{
+    display: none;
+    margin-top: 40px;
+}
+.timer 
+{
+    text-align: center;
+}
+.cancel-btn
+{
+    position: absolute;
+    bottom: 21px;
+    left: 72px;
+    display: block;
+    border-radius: 6px;
+    background-color: #919210;
+    width: 64px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.button-first__stop 
+{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 178px;
+}
+.button-second__start 
+{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    right: 84px;
+}
+.btn
+{
+    display: block;
+    border-radius: 6px;
+    background-color: #919210;
+    width: 140px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.timer-clock
+{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #919210;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+}
+.timer-clock__hour, .timer-clock__minute, .timer-clock__second
+{
+    padding: 18px;
+    margin: 0 10px;
+    border-radius: 10px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #919210;
+    font-size: 24px;
+    background-color: wheat;
+}
+.dots
+{
+    color: #919210;
+    font-size: 40px;
+}
+.panel-bottom
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-bottom__clock, .panel-bottom__timer
+{
+    margin: 0 40px;
+    cursor: pointer;
+}
+.panel-bottom__name
+{
+    display: block;
+    color: aquamarine;
+    font-size: 20px;
+}

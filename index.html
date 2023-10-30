@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="day">
+            <span class="dayOfWeek"></span>
+        </div>
+        <div class="hour">
+            <div class="hr" id="hr">
+
+            </div>            
+        </div>
+        <div class="min">
+            <div class="mn" id="mn">
+           
+            </div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc">
+        
+            </div>
+        </div>
+    </div>
+    <div class="area">
+        <div class="timer">
+            <!-- <form class="timer-form">
+                <input type="text" id="timer-hour">
+                <input type="text" id="timer-minute">
+                <input type="text" id="timer-second">
+                <button type="submit" class="btn">Устновить таймер</button>
+            </form> -->
+            <div class="timer-form">
+                <input type="text" id="timer-hour">
+                <input type="text" id="timer-minute">
+                <input type="text" id="timer-second">
+                <button type="submit" class="btn">Устновить таймер</button>
+            </div>
+        </div>
+        <div class="timer-clock">
+            <div class="timer-clock__cancel">
+                <button class="cancel-btn">cancel</button>
+            </div>
+            <div class="button-second">
+                <img class="button-second__start" src="images/start.png" alt="">
+            </div>
+            <div class="button-first">
+                <img class="button-first__stop" src="images/stop.png" alt="">
+            </div>
+            <span class="timer-clock__hour"></span>
+            <span class="dots">:</span>
+            <span class="timer-clock__minute"></span>
+            <span class="dots">:</span>
+            <span class="timer-clock__second"></span>
+        </div>
+    </div>
+    <div class="panel-bottom">
+        <div class="panel-bottom__clock">
+            <img src="images/btn-clock.png" alt="">
+            <span class="panel-bottom__name">Clock</span>
+        </div>
+        <div class="panel-bottom__timer">
+            <img src="images/btn-timer.png" alt="">
+            <span class="panel-bottom__name">Timer</span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
